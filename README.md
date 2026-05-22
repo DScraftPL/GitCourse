@@ -24,7 +24,7 @@ Git opiera się na wskaźnikach na konkretne migawki - `HEAD` pokazuje na jakiej
 
 ### `git add`
 
-Domyślnie pliki nie są śledzone. Programista musi wskazać systemowi, które pliki ma śledzić. Do tego służy polecenie `git add`.
+Domyślnie pliki nie są śledzone. Programista musi wskazać systemowi, które pliki ma śledzić. Można powiedzieć że `git add` przygotowuje pliki do commita.
 
 ### `git commit`
 
@@ -42,11 +42,30 @@ Sprawdzenie gałęzi w projekcie.
 
 Przełączenie się na gałąź w projekcie.
 
-### `git push | git pull | git fetch`
+### `git push`
+
+Wysyła lokalne commity na zdalny serwer (np. GitHub).
+
+### `git fetch`
+
+Pobiera informacje o zmianach ze zdalnego repo, ale nie scala ich z lokalnym kodem.
+Po `git fetch` możesz zobaczyć różnice komendą `git diff main origin/main`
+
+### `git pull`
+
+To skrót od `git fetch` + `git merge`. Pobiera zmiany i od razu scala je z bieżącą gałęzią.
 
 #### `git push --force`
 
+To samo co `git push`, ale nadpisuje historię na serwerze nawet jeśli jest rozbieżna z lokalną.
+
 ### `git reset`
+
+Cofa stan repozytorium.
+Tryby:
+`--soft HEAD~1` `zmiany wracają do staged` `pliki bez zmian`
+`--mixed HEAD~1` `(domyślny) zmiany wracają do unstaged` `pliki bez zmian`
+`--hard HEAD~1` `staging wyczyszczony` `pliki zostają cofnięte a zmiany utracone`
 
 ## Zdalne repozytoria
 
