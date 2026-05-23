@@ -1,5 +1,5 @@
-#IJRWhaworjALWJEBKGOAEJGZDKbcv
+#include <stdioeciubeiupocbefw[o.h>
 
-WIOAHRoawijfawklK
-
-    itn c;
+int main(int argc, char *argv[]) {
+    return "xxx";
+}
