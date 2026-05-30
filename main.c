@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int main(){
-	int a;
-	printf("Hello World\nWrite a number: ");
-	scanf("%i", &a);
-	printf("\n%i\n", a);
-	return 0;
+    int a;
+    printf("Hello World!\n");
+    scanf("%i", &a);
+    printf("%i", a);
+    return 0;
 }
